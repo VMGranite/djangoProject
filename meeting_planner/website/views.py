@@ -1,5 +1,4 @@
 from django.http import HttpResponse
-from django.shortcuts import render
 
 
 # Create your views here.
@@ -10,3 +9,7 @@ from django.shortcuts import render
 # when a user visits the welcome page, the HttpResponse will be displayed
 def welcome(request):
     return HttpResponse("Welcome to the Meeting Planner!")
+
+
+def about(request):
+    return HttpResponse("I'm a software engineer")
