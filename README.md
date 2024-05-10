@@ -1,13 +1,13 @@
-python3 -m pip install django <br>
-Installs the latest Django release
+**python3 -m pip install django** <br>
+_Installs the latest Django release_
 
-pip install --upgrade pip <br>
+**pip install --upgrade pip** <br>
 
-django-admin startproject meeting_planner <br>
-starting the project. Make sure you are in your active environment
+**django-admin startproject meeting_planner** <br>
+_starting the project. Make sure you are in your active environment_
 
-python manage.py runserver <br>
-CD into, and run within the project folder
+**python manage.py runserver** <br>
+_CD into, and run within the project folder_
 
-python manage.py startapp website <br>
-created an app called website
+**python manage.py startapp website <br>**
+_created an app called website_
