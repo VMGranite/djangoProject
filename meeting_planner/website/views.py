@@ -1,6 +1,8 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 
+from meetings.models import Meeting
+
 
 # Create your views here.
 # a django component that handles a request for a web page
@@ -10,7 +12,7 @@ from django.shortcuts import render
 # when a user visits the welcome page, the HttpResponse will be displayed
 def welcome(request):
     return render(request, "website/welcome.html",
-                  {"message": "The data was sent from the view to the template."})
+                  {"num_meetings": Meeting.objects.count()})
 
 
 def about(request):
