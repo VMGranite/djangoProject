@@ -21,6 +21,6 @@ from website.views import welcome, about
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', welcome), #empty string becomes index page of the website
+    path('', welcome),  # An empty string becomes the index page of the website
     path('about', about)
 ]

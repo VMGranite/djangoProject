@@ -32,3 +32,6 @@ _shows the sql that will be applied, but doesn't actually apply these changes ye
 
 **python manage.py migrate <br>**
 _this will apply changes to the database to match the models_
+
+ python manage.py createsuperuser <br>
+ python manage.py changepassword <user_name>
