@@ -25,13 +25,17 @@ sqlite> **select * from django_migrations;** <br>
 _shows every migration that has happened. Records state of the database_
 
 **python manage.py makemigrations <br>**
-_determines what changes to make to the database. To make database match the model_
+_generate migration script (check it)_
 
 **python manage.py sqlmigrate meetings 0001 <br>**
 _shows the sql that will be applied, but doesn't actually apply these changes yet_
 
+**python manage.py showmigrates <br>**
+_show migrations_
+
 **python manage.py migrate <br>**
 _this will apply changes to the database to match the models_
 
- python manage.py createsuperuser <br>
- python manage.py changepassword <user_name>
+ **python manage.py createsuperuser <br>**
+
+ **python manage.py changepassword <user_name>**
