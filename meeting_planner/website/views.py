@@ -9,7 +9,8 @@ from django.shortcuts import render
 # view function, handles http request of the Welcome Page of the site
 # when a user visits the welcome page, the HttpResponse will be displayed
 def welcome(request):
-    return render(request, "website/welcome.html")
+    return render(request, "website/welcome.html",
+                  {"message": "The data was sent from the view to the template."})
 
 
 def about(request):
