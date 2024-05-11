@@ -1,4 +1,5 @@
 meeting_planner/meeting_planner/__pycache__/
 meeting_planner/website/__pycache__/
+meeting_planner/meetings/__pycache__/
 venv/
 .idea/
