@@ -24,5 +24,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', welcome),  # An empty string becomes the index page of the website
     path('about', about),
-    path('meetings/<int:id>', detail)
+    path('meetings/<int:id>', detail, name="detail")
 ]
