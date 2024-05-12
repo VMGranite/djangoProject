@@ -22,7 +22,7 @@ from meetings.views import detail
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', welcome),  # An empty string becomes the index page of the website
+    path('', welcome, name="welcome"),  # An empty string becomes the index page of the website
     path('about', about),
     path('meetings/<int:id>', detail, name="detail")
 ]
