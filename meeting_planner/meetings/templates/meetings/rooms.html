@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Rooms</title>
+</head>
+<body>
+    <h2>All Meeting Rooms in the Building</h2>
+    <ul>
+        {% for room in rooms %}
+        <li>
+            <a>
+                <b>{{ room.name }}:</b> <br>
+                Room {{ room.room_number }} <br>
+                Floor {{ room.floor_number }}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

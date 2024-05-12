@@ -18,11 +18,12 @@ from django.contrib import admin
 from django.urls import path
 
 from website.views import welcome, about
-from meetings.views import detail
+from meetings.views import detail, rooms
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', welcome, name="welcome"),  # An empty string becomes the index page of the website
     path('about', about),
-    path('meetings/<int:id>', detail, name="detail")
+    path('meetings/<int:id>', detail, name="detail"),
+    path('rooms', rooms, name="rooms")
 ]
