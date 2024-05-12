@@ -10,9 +10,7 @@
         {% for room in rooms %}
         <li>
             <a>
-                <b>{{ room.name }}:</b> <br>
-                Room {{ room.room_number }} <br>
-                Floor {{ room.floor_number }}
+                {{ room }}
             </a>
         </li>
         {% endfor %}
