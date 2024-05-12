@@ -12,7 +12,7 @@ from meetings.models import Meeting
 # when a user visits the welcome page, the HttpResponse will be displayed
 def welcome(request):
     return render(request, "website/welcome.html",
-                  {"num_meetings": Meeting.objects.count()})
+                  {"meetings": Meeting.objects.all()})
 
 
 def about(request):
