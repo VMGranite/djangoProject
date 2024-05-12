@@ -1,8 +1,10 @@
+{%  load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Welcome</title>
+    <link rel="stylesheet" href="{% static 'website/style.css' %}">
 </head>
 <body>
     <h1>Welcome to the Meeting Planner!</h1>
@@ -23,9 +25,10 @@
 
     <a href="{% url 'rooms' %}">Rooms List</a>
 
-    <br>
+    <br> <br>
 
-    <img src="https://pbs.twimg.com/media/DZB9pXaXUAAiREc.jpg" alt="Pony">
+    <img src="{% static 'website/pony.jpeg'%}" width="500px" alt="Backend Pony">
+
 
 </body>
 </html>
