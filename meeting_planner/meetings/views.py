@@ -8,6 +8,6 @@ def detail(request, id):
     return render(request, "meetings/detail.html", {"meeting": meeting})
 
 
-def rooms(request):
+def rooms_list(request):
     return render(request, "meetings/rooms.html",
                   {"rooms": Room.objects.all()})
