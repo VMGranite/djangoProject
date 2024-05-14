@@ -3,3 +3,12 @@ body {
     color: cornflowerblue;
     background-color: floralwhite;
 }
+
+p {
+    color: coral;
+}
+
+ul {
+    font-family: cursive;
+    color: darkmagenta;
+}
