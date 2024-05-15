@@ -24,4 +24,5 @@ urlpatterns = [
     path('', welcome, name="welcome"),  # An empty string becomes the index page of the website
     path('about', about),
     path('meetings/', include('meetings.urls')),
+    path('auth/', include('django.contrib.auth.urls')),
 ]
