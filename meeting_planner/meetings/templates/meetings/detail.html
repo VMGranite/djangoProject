@@ -9,6 +9,12 @@
         {{ meeting.start_time }} in <strong>{{ meeting.room }}</strong>
     </p>
 
+    <h2>Participants</h2>
+    <ul>
+        {% for participant in meeting.participants.all %}
+            <li> {{ participant.username }}</li>
+        {% endfor %}
+    </ul>
 
     <a href="{% url 'edit' meeting.id %}">Edit Meeting Details</a>
     <br>
