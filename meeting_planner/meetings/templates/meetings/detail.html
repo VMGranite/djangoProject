@@ -9,10 +9,10 @@
         {{ meeting.start_time }} in <strong>{{ meeting.room }}</strong>
     </p>
 
-    <p>
-        <a href="{% url 'welcome' %}">
-            Return to Welcome Page
-        </a>
-    </p>
+
+    <a href="{% url 'edit' meeting.id %}">Edit Meeting Details</a>
+    <br>
+    <a href="{% url 'welcome' %}">Return to Welcome Page</a>
+
 
 {% endblock %}
