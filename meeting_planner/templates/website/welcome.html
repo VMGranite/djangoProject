@@ -9,6 +9,7 @@
         This is a demo application
     </p>
 
+    {% if user.is_authenticated %}
     <h2>Meetings</h2>
     <ul>
         {% for meeting in meetings %}
@@ -19,6 +20,7 @@
         </li>
         {% endfor %}
     </ul>
+    {% endif %}
 
     <a href="{% url 'rooms' %}">Rooms List</a>
     <br>
