@@ -11,8 +11,11 @@ from meetings.models import Meeting
 # view function, handles http request of the Welcome Page of the site
 # when a user visits the welcome page, the HttpResponse will be displayed
 def welcome(request):
-    return render(request, "website/welcome.html",
-                  {"meetings": Meeting.objects.all()})
+    if request.user.is_authenticated:
+        context = {"meetings": Meeting.objects.all()}
+    else:
+        context = {}
+    return render(request, "website/welcome.html", context=context)
 
 
 def about(request):
